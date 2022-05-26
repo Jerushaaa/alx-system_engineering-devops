@@ -1,1 +1,1 @@
- script that creates a directory called my_dir with permission 
+ script that changes the owner to vincent and the group owner to staff
