@@ -1,1 +1,1 @@
- script that lists all files
+ copies all the HTML files from the current working directory
