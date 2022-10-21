@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-#localhost resolves to 127.0.0.2
-#facebook.com resolves to 8.8.8.8
+# Change localhost to 127.0.0.2
+# Change facebook.com to 8.8.8.8
 
 cp /etc/hosts ~/hosts.new
-sed -i "/.*\slocalhost/d" ~/hosts.new
-echo "127.0.0.2 localost" >> ~/hosts.new
-sed -i "/.*\sfacebook/d" ~/hosts.new
-echo "8.8.8.8 facebook" >> ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.new
+echo "8.8.8.8		facebook.com" >> ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
