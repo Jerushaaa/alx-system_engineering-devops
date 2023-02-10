@@ -1,4 +1,4 @@
-erver handle more request.
+# make server handle more request.
 
 # Increase the ULIMIT of the default file
 exec { 'fix--for-nginx':
